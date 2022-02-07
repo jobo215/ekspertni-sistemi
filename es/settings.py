@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
-import whitenoise
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +25,7 @@ SECRET_KEY = 'django-insecure-x#-_&kojop0ff^wolqljvlt=(gpf3r-a_1a$%*3x_kjfax0l1j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ekpertnisistemi0052019.herokuapp.com']
+ALLOWED_HOSTS = ['jobo215.pythonanywhere.com']
 
 STATIC_ROOT=os.path.join(BASE_DIR, 'static')
 # Application definition
@@ -44,7 +42,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -52,8 +49,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-django_heroku.settings(locals())
 
 ROOT_URLCONF = 'es.urls'
 
