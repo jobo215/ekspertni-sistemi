@@ -1,1 +1,0 @@
-web: gunicorn es.wsgi --log-file - --log-level debug
