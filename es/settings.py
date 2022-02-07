@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-x#-_&kojop0ff^wolqljvlt=(gpf3r-a_1a$%*3x_kjfax0l1j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['jobo215.pythonanywhere.com']
+ALLOWED_HOSTS = ['ekspertnisistemi0052019.herokuapp.com']
 
 STATIC_ROOT=os.path.join(BASE_DIR, 'static')
 # Application definition
